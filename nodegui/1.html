@@ -1,0 +1,22 @@
+<code
+  ><span># Use root/example as user/password credentials</span>
+  <span>version</span><span>:</span> <span>'3.1'</span> <span>services</span
+  ><span>:</span> <span>mongo</span><span>:</span> <span>image</span
+  ><span>:</span> mongo <span>restart</span><span>:</span> always
+  <span>environment</span><span>:</span> <span>MONGO_INITDB_ROOT_USERNAME</span
+  ><span>:</span> root <span>MONGO_INITDB_ROOT_PASSWORD</span
+  ><span>:</span> example <span>mongo-express</span><span>:</span>
+  <span>image</span><span>:</span> mongo<span>-</span>express
+  <span>restart</span><span>:</span> always <span>ports</span><span>:</span>
+  <span>-</span> 8081<span>:</span><span>8081</span> <span>environment</span
+  ><span>:</span> <span>ME_CONFIG_MONGODB_ADMINUSERNAME</span
+  ><span>:</span> root <span>ME_CONFIG_MONGODB_ADMINPASSWORD</span
+  ><span>:</span> example <span>ME_CONFIG_MONGODB_URL</span
+  ><span>:</span>
+  mongodb<span>:</span>//root<span>:</span>example@mongo<span>:</span>27017/
+  <div
+    class="hljs-button signin"
+    data-title="登录后复制"
+    data-report-click='{"spm":"1001.2101.3001.4334"}'
+  ></div>
+</code>
